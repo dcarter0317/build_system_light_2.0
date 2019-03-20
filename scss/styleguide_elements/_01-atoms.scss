@@ -1,0 +1,28 @@
+// Components
+/*
+  Header
+
+	Styleguide 1.0
+*/
+
+/*
+    Text Header
+
+		markup:
+		<header>
+        <h1>Header Title</h1>
+		</header>
+
+	sg-wrapper:
+	<section>
+	   <sg-wrapper-content/>
+	</section>
+
+  Styleguide 1.1
+*/
+
+header {
+	background: gray;
+	color: black;
+	padding: 10px ;
+}

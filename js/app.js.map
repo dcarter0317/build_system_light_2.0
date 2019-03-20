@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["$"],"mappings":"AAAA,YAEAA,GAAA","file":"app.js","sourcesContent":["'use strict';\r\n\r\n$(function(){\r\n\r\n});\r\n\r\n//# sourceMappingURL=main.js.map\r\n"]}

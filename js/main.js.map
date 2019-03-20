@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["'use strict';\n\n$(function(){\n $('body').text('jquery');\n});\n\n//# sourceMappingURL=main.js.map\n\n//# sourceMappingURL=main.js.map\n\n//# sourceMappingURL=main.js.map\n\n//# sourceMappingURL=main.js.map\n\n//# sourceMappingURL=main.js.map\n\n//# sourceMappingURL=main.js.map\n"],"file":"main.js"}

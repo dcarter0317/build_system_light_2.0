@@ -1,0 +1,79 @@
+// WEBFONTS
+
+@mixin font-face($family, $file) {
+  font-family: $family;
+  src: url('#{$path-font}/#{$file}-webfont.eot');
+  src: url('#{$path-font}/#{$file}-webfont.eot?iefix') format('embedded-opentype');
+  src: url('#{$path-font}/#{$file}-webfont.woff') format('woff');
+  src: url('#{$path-font}/#{$file}-webfont.ttf') format('truetype');
+}
+
+// TEXT
+
+@mixin text($size, $l-height: null, $weight: null, $color: null) {
+   font-size: $size;
+   line-height: $l-height;
+   font-weight: $weight;
+   color: $color;
+}
+
+// IMAGES
+
+@mixin backImage($image) {
+	background: url($image) no-repeat 50% 20%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+
+	-webkit-transition: all 0.3 ease-out;
+	-moz-transition: all 0.3 ease-out;
+	-o-transition: all 0.3 ease-out;
+	transition: all 0.3 ease-out;
+
+  @media (min-width: 300px) {
+    height: 100px;
+  }
+  @media (min-width: 800px) {
+    height: 150px;
+  }
+	@media (min-width: 801px) {
+       height: 350px;
+	}
+
+}
+
+@mixin clearfix {
+  &:after {
+  	 content: '';
+  	 display: table;
+  	 clear: both;
+  }
+}
+
+
+@mixin tablet {
+  @media all and (min-width: #{$med-device}){
+     @content;
+  }
+}
+
+@mixin desktop {
+  @media all and (min-width: #{$large-device}) {
+     @content;
+  }
+}
+
+@mixin retina {
+  @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        @content;
+      }
+}
+
+@mixin iesupport {
+  @media all and (-ms-high-contrast: none) and (-ms-high-contrast: active) {
+     @content;
+  }
+}

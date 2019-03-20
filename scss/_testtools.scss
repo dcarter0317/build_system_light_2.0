@@ -1,0 +1,73 @@
+//TEST MEDIA QUERIES (Use this to text to media query a device is using- for use during development and troubleshooting)
+
+$font-size: 16px;
+
+body {
+
+  &:before {
+    content: "phone";
+    display: block;
+    background: grey;
+    font-weight: 700;
+    font-size: $font-size * 2;
+    color: white;
+    height: 40px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@include tablet {
+  body {
+
+    &:before {
+      content: "tablet";
+      display: block;
+      background: blue;
+      font-weight: 700;
+      font-size: $font-size * 2;
+      color: white;
+      height: 40px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+@include desktop {
+  body {
+
+    &:before {
+      content: "desktop";
+      display: block;
+      background: red;
+      font-weight: 700;
+      font-size: $font-size * 2;
+      color: white;
+      height: 40px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+@include retina {
+  body {
+    position: relative;
+
+    &:after {
+      content: "retina display";
+      display: block;
+      position: absolute;
+      top: 40px;
+      background: green;
+      font-weight: 700;
+      font-size: $font-size * 2;
+      color: white;
+      height: 40px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+//END TEST MEDIA QUERIES
